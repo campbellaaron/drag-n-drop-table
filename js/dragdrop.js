@@ -1,6 +1,5 @@
-var val, employeeName, employeeLogin;
-
 $(document).ready(function () {
+    var val, employeeName, employeeLogin;
 
     var ouSelect = $('#ouSelect').val();
     var selectionBtn = $('#selection');
