@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Dragon Drop App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dragon Droppings</h1>
+        <h2 id="employeeLogin"></h2>
+            <select name="shifts" id="ouSelect">
+                <option disabled selected>Select an OU...</option>
+                <option value="retail">Retail</option>
+                <option value="primenow">PrimeNow</option>
+                <option value="cam">CAM</option>
+                <option value="ci-gen">Charge Inquiries</option>
+                <option value="tm">Team Manager</option>
+                <option value="special-handling">Special Handling</option>
+            </select>
+            <button id="selection">Display OU in Console</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>UserName</th>
+                    <th>Email</th>
+                    <th>Hire Date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>aarcampb</td>
+                    <td>aarcampb@amazon.com</td>
+                    <td>Oct 2, 2017</td>
+                    <td>$11/hr</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>lickbeans</td>
+                    <td>aaron@doomedforfailure.com</td>
+                    <td>Sep 10, 2000</td>
+                    <td>$1M/yr</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+    <div>
+        <label for="login">Your Login:</label>
+        <input type="text" id="login" name="user_login">
+    </div>
+    <iframe id="txtArea1" style="display:none"></iframe>
+    <button id="submit">Submit</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/dragdrop.js"></script>
+</body>
+
+</html>
